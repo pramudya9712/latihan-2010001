@@ -4,57 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-    <style>
-        body {
-            margin: 50px 100px;
-        }
-    th {
-            background-color: aqua;
-    }
-
-    td {
-            background-color: chocolate;
-    }
-
-    
-    th, td{
-        padding: 10px;
-    }
-    </style>
+    <title>Form</title>
 </head>
 
 <body>
-    <table rules="all" border=1px solid">   
+    <form action="tampilan-form.php">
+    <table cellpadding="10px">
         <tr>
-            <th colspan="4" > My Profile </th>
+            <td>Kampus</td>
+            <td>:</td>
+            <td><Input Type="text"></td>
         </tr>
         <tr>
-            <td style="padding-right:50px; padding-left:5px;">Nama</td>
-            <td style="padding: 5px:"></td>
-            <td>Jodi</td>
-            <td rowspan="5"style="padding: 0 100px:"><img src="male-profile.jpg" alt=""style="width; 150px; height 175px; border-radius;50%;"></td>
-        </tr>
-        <tr>
-            <td style="padding-right:50px; padding-left:5px;">Kelas</td>
-            <td style="padding: 5px;"></td>
-            <td>1B</td>  
-        </tr>
-        <tr>
-            <td style="padding-right:50px; padding-left:5px;">Prodi</td>
-            <td style="padding: 5px;"></td>
-            <td>Teknik Informatika</td>
-        </tr>
-        <tr>
-        <td style="padding-right:50px; padding-left:5px;">Hobi</td>
-            <td style="padding: 5px;"></td>
-            <td>Ngoding</td>"
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Prodi</td>
+            <td>:</td>
+            <td><select name="prodi" Id="prodi">
+                <option value="ti">Teknik Informatika</option>
+                <option value="si">Sistem Informatika</option>
+            </select></td>
         </tr>
     </table>
-</body>
 
+    </form> 
+</body>
+</html>
